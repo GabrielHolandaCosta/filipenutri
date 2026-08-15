@@ -272,6 +272,7 @@ h2 {
   height: 100%;
   object-fit: cover;
   object-position: 50% 0;
+  transform: scaleX(-1);
   filter: saturate(0.9);
 }
 
@@ -402,38 +403,72 @@ h2 {
 }
 
 .results-grid {
-  max-width: 790px;
+  max-width: 980px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  gap: 18px;
   margin: 0 auto;
+  scrollbar-color: rgba(186, 135, 54, 0.65) transparent;
 }
 
-.result-placeholder {
-  min-height: 250px;
-  display: grid;
-  place-items: center;
-  align-content: center;
-  gap: 10px;
-  padding: 24px;
-  border: 1px dashed rgba(156, 108, 24, 0.55);
+.results-grid::-webkit-scrollbar {
+  height: 8px;
+}
+
+.results-grid::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: rgba(186, 135, 54, 0.55);
+}
+
+.result-card {
+  margin: 0;
+  padding: 10px;
+  border: 1px solid rgba(156, 108, 24, 0.22);
   border-radius: var(--radius);
   background:
-    linear-gradient(135deg, rgba(186, 135, 54, 0.1), rgba(84, 83, 88, 0.06)),
+    linear-gradient(180deg, rgba(186, 135, 54, 0.08), rgba(255, 255, 255, 0.8)),
     var(--paper-soft);
-  color: var(--graphite);
-  text-align: center;
+  box-shadow: 0 18px 38px rgba(84, 83, 88, 0.11);
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
 }
 
-.result-placeholder span {
+.result-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(186, 135, 54, 0.52);
+  box-shadow: 0 22px 46px rgba(84, 83, 88, 0.16);
+}
+
+.result-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  border-radius: calc(var(--radius) - 2px);
+  background:
+    radial-gradient(circle at 50% 20%, rgba(186, 135, 54, 0.1), rgba(255, 255, 255, 0) 48%),
+    var(--white);
+}
+
+.result-card figcaption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 11px 4px 2px;
+}
+
+.result-card span {
   color: var(--bronze);
-  font-family: "Fraunces", Georgia, serif;
-  font-size: 1.8rem;
+  font-size: 0.78rem;
+  font-weight: 950;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 
-.result-placeholder strong {
+.result-card strong {
   color: var(--black);
-  font-size: 0.95rem;
+  font-size: 0.86rem;
+  font-weight: 850;
+  text-align: right;
 }
 
 .testimonials {
@@ -476,7 +511,7 @@ h2 {
 
 .testimonial-card {
   position: relative;
-  min-height: 214px;
+  min-height: 268px;
   display: grid;
   align-content: space-between;
   gap: 16px;
@@ -515,7 +550,7 @@ h2 {
 .testimonial-card p {
   margin: 0;
   color: rgba(14, 14, 14, 0.82);
-  font-size: 1rem;
+  font-size: 0.98rem;
   font-weight: 650;
 }
 
@@ -998,7 +1033,7 @@ details[open] p {
 
   .hero-portrait picture {
     width: 100%;
-    height: clamp(520px, 108vw, 640px);
+    height: clamp(560px, 90vw, 760px);
     max-height: none;
     overflow: hidden;
     border-radius: 0;
@@ -1007,7 +1042,7 @@ details[open] p {
   .hero-portrait img {
     height: 100%;
     object-fit: cover;
-    object-position: 50% 36%;
+    object-position: 50% 8%;
   }
 
   .method-grid {
@@ -1027,8 +1062,8 @@ details[open] p {
   }
 
   .results-grid {
-    grid-template-columns: 1fr;
-    max-width: 420px;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 760px;
   }
 
   .testimonials {
@@ -1136,6 +1171,18 @@ details[open] p {
     font-size: 2.18rem;
   }
 
+  .hero-copy {
+    margin-top: -124px;
+  }
+
+  .hero-portrait picture {
+    height: clamp(530px, 116vw, 650px);
+  }
+
+  .hero-portrait img {
+    object-position: 50% 12%;
+  }
+
   .hero-subtitle {
     font-size: 1.04rem;
   }
@@ -1185,6 +1232,27 @@ details[open] p {
     width: auto;
     min-width: 210px;
     justify-self: center;
+  }
+
+  .results-grid {
+    grid-template-columns: none;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(286px, 86vw);
+    max-width: none;
+    justify-content: start;
+    gap: 14px;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    padding: 2px 2px 12px;
+  }
+
+  .result-card {
+    scroll-snap-align: center;
+  }
+
+  .result-card img {
+    aspect-ratio: 1 / 1;
   }
 
   .testimonial-grid {
