@@ -7,7 +7,7 @@ Landing page estática para apresentar o acompanhamento nutricional esportivo do
 - Identidade visual em preto, branco, grafite e dourado: `#545358`, `#ffffff`, `#0e0e0e`, `#9c6c18`, `#ba8736`.
 - Estrutura inspirada no layout do site de referência: barra superior, hero de conversão, método em etapas numeradas, resultados, bloco "pra você", apresentação, CTA final e FAQ.
 - Fotos profissionais do Filipe aplicadas no hero e na seção "Quem é", com versões WebP otimizadas.
-- Área de resultados criada sem fotos reais, com espaços reservados para inserir antes/depois autorizados depois.
+- Área de resultados com seis evoluções reais, ordenadas conforme a identificação das fotos e acompanhadas pelas respectivas histórias de transformação.
 - Botões de WhatsApp com mensagens automáticas.
 - SEO on-page com title, description, Open Graph, Twitter Card, dados estruturados LocalBusiness e FAQPage.
 - `robots.txt` e `sitemap.xml` preparados para indexação.
@@ -16,12 +16,19 @@ Landing page estática para apresentar o acompanhamento nutricional esportivo do
 
 Abra `index.html` no navegador. O site não precisa de build nem instalação de dependências.
 
+## Conteúdo atualizado
+
+- Tema principal atualizado para apresentar o Método RD e sua aplicação em rotinas corridas.
+- Texto de abertura simplificado conforme a revisão do cliente.
+- Primeira etapa do método ajustada de "semana real" para "vida real".
+- Fotos de resultados reorganizadas na sequência correta (01 a 06), com legendas individuais.
+- FAQ atualizado com prazo esperado para resultados, formatos de atendimento, endereço do consultório e política de atendimento particular/reembolso.
+
 ## Ajustes importantes antes de publicar
 
 - Confirme se o domínio será `https://www.filipedantasnutri.com.br/`. Se for outro, atualize `canonical`, `og:url`, `og:image`, `sitemap.xml` e `robots.txt`.
-- Confirme o endereço presencial completo do Harmony Trade Center.
 - Confirme se o CRN `30822/P` deve aparecer exatamente assim.
-- Substitua os espaços da seção de resultados por fotos/depoimentos autorizados quando Filipe liberar.
+- Confirme se todas as fotos e histórias de resultados têm autorização de uso.
 - Crie Google Search Console e Perfil da Empresa no Google para competir por buscas locais em Maceió.
 
 ## WhatsApp

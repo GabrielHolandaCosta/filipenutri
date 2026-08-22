@@ -449,10 +449,9 @@ h2 {
 }
 
 .result-card figcaption {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
+  display: grid;
+  align-content: start;
+  gap: 7px;
   padding: 11px 4px 2px;
 }
 
@@ -466,9 +465,10 @@ h2 {
 
 .result-card strong {
   color: var(--black);
-  font-size: 0.86rem;
+  font-size: 0.9rem;
   font-weight: 850;
-  text-align: right;
+  line-height: 1.35;
+  text-align: left;
 }
 
 .testimonials {
