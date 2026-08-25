@@ -23,6 +23,8 @@ Abra `index.html` no navegador. O site não precisa de build nem instalação de
 - Primeira etapa do método ajustada de "semana real" para "vida real".
 - Fotos de resultados reorganizadas na sequência correta (01 a 06), com legendas individuais.
 - FAQ atualizado com prazo esperado para resultados, formatos de atendimento, endereço do consultório e política de atendimento particular/reembolso.
+- Abertura mobile refinada, com CTA logo abaixo da chamada para o WhatsApp e menos espaço ocioso entre as seções.
+- Item principal do bloco “Esse método é pra você” movido para o início da lista.
 
 ## Ajustes importantes antes de publicar
 

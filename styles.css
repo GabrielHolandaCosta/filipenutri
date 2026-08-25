@@ -1188,14 +1188,22 @@ details[open] p {
   }
 
   .hero-text {
-    order: 5;
-    margin-bottom: 0;
+    order: 4;
+    margin-bottom: 22px;
     font-size: 1rem;
   }
 
   .hero-button {
-    order: 4;
-    margin-bottom: 28px;
+    order: 5;
+    margin-bottom: 0;
+  }
+
+  .section.method {
+    padding-bottom: 38px;
+  }
+
+  .section.results {
+    padding-top: 38px;
   }
 
   .button {
