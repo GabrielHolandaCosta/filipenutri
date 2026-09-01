@@ -25,6 +25,7 @@ Abra `index.html` no navegador. O site não precisa de build nem instalação de
 - FAQ atualizado com prazo esperado para resultados, formatos de atendimento, endereço do consultório e política de atendimento particular/reembolso.
 - Abertura mobile refinada, com CTA logo abaixo da chamada para o WhatsApp e menos espaço ocioso entre as seções.
 - Item principal do bloco “Esse método é pra você” movido para o início da lista.
+- Subtítulo principal sem negrito e espaços mobile reduzidos antes do método e da foto de apresentação.
 
 ## Ajustes importantes antes de publicar
 

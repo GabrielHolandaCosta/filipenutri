@@ -214,7 +214,7 @@ h2 {
   max-width: 560px;
   margin-bottom: 28px;
   font-size: 1.18rem;
-  font-weight: 850;
+  font-weight: 400;
 }
 
 .hero-text {
@@ -1187,6 +1187,10 @@ details[open] p {
     font-size: 1.04rem;
   }
 
+  .hero-inner {
+    padding-bottom: 36px;
+  }
+
   .hero-text {
     order: 4;
     margin-bottom: 22px;
@@ -1199,6 +1203,7 @@ details[open] p {
   }
 
   .section.method {
+    padding-top: 36px;
     padding-bottom: 38px;
   }
 
@@ -1213,6 +1218,14 @@ details[open] p {
 
   .section {
     padding: 68px 0;
+  }
+
+  .section.fit {
+    padding-bottom: 26px;
+  }
+
+  .section.about {
+    padding: 0;
   }
 
   .center-heading {
