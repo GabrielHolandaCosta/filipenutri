@@ -26,6 +26,7 @@ Abra `index.html` no navegador. O site não precisa de build nem instalação de
 - Abertura mobile refinada, com CTA logo abaixo da chamada para o WhatsApp e menos espaço ocioso entre as seções.
 - Item principal do bloco “Esse método é pra você” movido para o início da lista.
 - Subtítulo principal sem negrito e espaços mobile reduzidos antes do método e da foto de apresentação.
+- CSS e JavaScript versionados na URL para evitar que navegadores exibam arquivos antigos em cache após uma atualização.
 
 ## Ajustes importantes antes de publicar
 
