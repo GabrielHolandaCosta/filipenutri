@@ -38,3 +38,16 @@ Abra `index.html` no navegador. O site não precisa de build nem instalação de
 ## WhatsApp
 
 O número usado nos botões é `+55 82 98890-4718`. As mensagens automáticas ficam em `index.html`, nos atributos `data-message`.
+
+O primeiro botão da página envia a mensagem: “Olá, Filipe! Quero começar minha transformação. Vi seu site e gostaria de saber os próximos passos.”
+
+## Domínio personalizado
+
+O site permanece hospedado gratuitamente no GitHub Pages. O domínio `.com.br` deve ser registrado diretamente em [registro.br](https://registro.br/) no CPF ou CNPJ do Filipe, para que ele seja o titular e mantenha o controle das renovações. O valor informado pelo Registro.br para um ano de manutenção é de R$ 40, e a cobrança deve ser gerada e paga dentro do próprio site oficial.
+
+Após a compra, a conexão é feita sem reenviar o site:
+
+1. Adicionar o domínio em **Settings → Pages → Custom domain** no repositório do GitHub.
+2. No painel DNS do Registro.br, criar quatro registros `A` para `@`, apontando para `185.199.108.153`, `185.199.109.153`, `185.199.110.153` e `185.199.111.153`.
+3. Criar o `CNAME` de `www` apontando para `gabrielholandacosta.github.io`.
+4. Aguardar a propagação do DNS e ativar **Enforce HTTPS** no GitHub Pages.
